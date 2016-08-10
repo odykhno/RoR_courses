@@ -1,0 +1,14 @@
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+</head>
+  <% @countries.each do |country| %>
+    <ul>
+      <%= country[0] %>
+      <% @regions = VkApi.new.regions(country[1]) %>
+      <% @regions.each do |region| %>
+        <li>
+          <%= region[1] %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>

@@ -1,0 +1,7 @@
+vk:
+  domen: api.vk.com
+  methods:
+    countries: /method/database.getCountries
+    regions: /method/database.getRegions
+    cities: /method/database.getCities
+    universities: /method/database.getUniversities
